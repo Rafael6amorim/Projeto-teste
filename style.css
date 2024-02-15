@@ -1,0 +1,148 @@
+body {
+    max-width: 1440px;
+    background: url('src/images/bg-pattern-bottom-desktop.svg') center center no-repeat;
+    background: url('src/images/bg-pattern-top-desktop.svg') center center no-repeat;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    height: 380px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+
+}
+.container .primeira-parte{
+    padding: 110px 0 0 160px;
+}
+
+.titulo {
+    color: var(--Very-Dark-Magenta);
+    font-weight:700;
+    font-size: 50px;
+    max-width: 360px;
+}
+
+.paragrafo-do-container{
+padding: 40px 0 ;
+max-width: 450px;
+line-height: 25px;
+font-size: 18px;
+color: var(--Dark-Grayish-Magenta);
+}
+
+.estrelinhas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nome{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 50px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Very-Dark-Magenta);
+    background-color: var(--Light-Grayish-Magenta);
+}
+.nome::before{
+    content: "";
+    background: url(src/images/icon-star.svg) repeat-x   ;
+    height: 20px;
+    width: 85px;
+    margin-right: 10px;
+}
+
+.primeiro.nome{
+    margin:0 110px 20px 0;
+}
+
+.terceiro.nome{
+    margin:10px 0 0 60px;
+}
+
+.comentarios{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.comentario{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    background-color:var(--Very-Dark-Magenta);
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0 20px ;
+}
+.titulos{
+    margin: 5px 30px 30px 0;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    width: 200px;
+  
+}
+.first.comentario .titulos::before{
+    content: "";
+    background: url('src/images/image-colton.jpg') no-repeat;
+    height: 25px;
+    width: 25px;
+    border-radius:70px ;
+    padding: 20px 20px;
+}
+
+.secund.comentario .titulos::before{
+    content: "";
+    background: url('src/images/image-irene.jpg') no-repeat ;
+    height: 25px;
+    width: 25px;
+    border-radius: 70px;
+    display: inline-block;
+    padding: 20px 20px;
+}
+
+.third.comentario .titulos::before{
+    content: "";
+    background: url('src/images/image-anne.jpg') no-repeat ;
+    height: 25px;
+    width: 25px;
+    border-radius: 70px;
+    display: inline-block;
+    padding: 20px 20px;
+}
+.titulo-do-comentario{
+ color: var(--White);
+ grid-area: 1/2/1/2;
+ padding:40px 0 20px 0;
+ 
+}
+.subtitulo-do-comentario{
+    grid-area: 1/2/1/2;
+    color: var(--SoftPink);
+    padding:20px 0 20px 0;
+}
+
+.secund.comentario{
+    margin: 30px 0 0 25px ;
+}
+
+.third.comentario{
+    margin: 60px 0 0 25px ;
+}
+.paragrafo-do-comentario{
+    color: var(--White);
+    line-height: 20px;
+    font-size: 14px;
+    
+   
+}
